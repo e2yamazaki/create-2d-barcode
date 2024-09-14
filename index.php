@@ -1,16 +1,20 @@
-<?php require_once('header.php') ?>
+<?php require_once 'header.php' ?>
+
 <body>
-    <header>
-        <h1>二次元バーコード生成</h1>
-    </header>
-    <main>
-        <section>
-            <form method="GET" action="result.php">
-                <textarea name="data" placeholder="バーコードにしたい文字列を入力"></textarea>
-                <input type="submit" value="二次元バーコードを生成する">
+    <h1 class="ui center aligned header">
+        <i class="qrcode icon"></i>
+        二次元バーコード生成
+    </h1>
+    <div class="ui container">
+        <div class="ui column centered grid">
+            <form class="column ui form" method="GET" action="result.php">
+                <div class="field">
+                    <textarea rows="2" name="data" placeholder="バーコードにしたい文字列を入力"></textarea>
+                </div>
+                <input type="submit" class="ui positive basic button" value="二次元バーコードを生成する">
             </form>
-        </section>
-    </main>
+        </div>
+    </div>
 </body>
 
 </html>
